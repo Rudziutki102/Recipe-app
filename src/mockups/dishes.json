@@ -1,0 +1,353 @@
+[
+  {
+    "name": "Barszcz ukraiński",
+    "cuisine": "Polish",
+    "price": 3,
+    "description": "Tradycyjna zupa buraczana podawana z kwaśną śmietaną i koprem.",
+    "tags": "polish,soup,quick,cheap",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Sushi",
+    "cuisine": "Japanese",
+    "price": 5,
+    "description": "Kawałki surowej ryby i warzyw zawinięte w glon nori z ryżem.",
+    "tags": "japanese,seafood,rice,expensive",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Tacos",
+    "cuisine": "Mexican",
+    "price": 2,
+    "description": "Tortilla z mięsem, warzywami i salsą, często podawane z limonką.",
+    "tags": "mexican,street food,spicy,cheap",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Pizza Margherita",
+    "cuisine": "Italian",
+    "price": 4,
+    "description": "Pizza z sosem pomidorowym, mozzarellą i bazylią.",
+    "tags": "italian,pizza,vegetarian,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Pad Thai",
+    "cuisine": "Thai",
+    "price": 3,
+    "description": "Smażony makaron ryżowy z krewetkami, tofu, jajkiem i warzywami.",
+    "tags": "thai,noodles,spicy,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Paella",
+    "cuisine": "Spanish",
+    "price": 4,
+    "description": "Ryż z szafranem, owocami morza, kurczakiem i warzywami.",
+    "tags": "spanish,rice,seafood,medium",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Croissant",
+    "cuisine": "French",
+    "price": 2,
+    "description": "Maślane ciastko w kształcie rogalika, idealne na śniadanie.",
+    "tags": "french,pastry,breakfast,cheap",
+    "type": "side",
+    "time": "breakfast"
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "cuisine": "Indian",
+    "price": 3,
+    "description": "Kurczak w pikantnym sosie pomidorowym z przyprawami.",
+    "tags": "indian,chicken,spicy,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Falafel",
+    "cuisine": "Middle Eastern",
+    "price": 2,
+    "description": "Smażone kulki z ciecierzycy, podawane w picie z warzywami.",
+    "tags": "middle eastern,vegetarian,street food,cheap",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Peking Duck",
+    "cuisine": "Chinese",
+    "price": 5,
+    "description": "Pieczona kaczka podawana z plackami i sosem hoisin.",
+    "tags": "chinese,duck,expensive",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Pho",
+    "cuisine": "Vietnamese",
+    "price": 3,
+    "description": "Aromatyczny bulion z makaronem ryżowym, wołowiną i ziołami.",
+    "tags": "vietnamese,soup,noodles,medium",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Borscht",
+    "cuisine": "Russian",
+    "price": 2,
+    "description": "Zupa buraczana z warzywami i mięsem, często podawana z kwaśną śmietaną.",
+    "tags": "russian,soup,cheap",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Shakshuka",
+    "cuisine": "Israeli",
+    "price": 2,
+    "description": "Jajka gotowane w pikantnym sosie pomidorowym z papryką i cebulą.",
+    "tags": "israeli,breakfast,vegetarian,cheap",
+    "type": "main",
+    "time": "breakfast"
+  },
+  {
+    "name": "Beef Stroganoff",
+    "cuisine": "Russian",
+    "price": 4,
+    "description": "Wołowina duszona w sosie śmietanowym z grzybami, podawana z makaronem.",
+    "tags": "russian,beef,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Bibimbap",
+    "cuisine": "Korean",
+    "price": 4,
+    "description": "Ryż z warzywami, mięsem, jajkiem i pikantnym sosem gochujang.",
+    "tags": "korean,rice,spicy,medium",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Hummus",
+    "cuisine": "Middle Eastern",
+    "price": 1,
+    "description": "Pasta z ciecierzycy, tahini, cytryny i czosnku, podawana z chlebkiem pita.",
+    "tags": "middle eastern,vegetarian,dip,cheap",
+    "type": "side",
+    "time": "snack"
+  },
+  {
+    "name": "Poutine",
+    "cuisine": "Canadian",
+    "price": 2,
+    "description": "Frytki polane sosem pieczeniowym i posypane serem.",
+    "tags": "canadian,street food,cheap",
+    "type": "side",
+    "time": "snack"
+  },
+  {
+    "name": "Moussaka",
+    "cuisine": "Greek",
+    "price": 3,
+    "description": "Zapiekanka z bakłażana, mięsa mielonego, pomidorów i beszamelu.",
+    "tags": "greek,baked,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Fish and Chips",
+    "cuisine": "British",
+    "price": 3,
+    "description": "Smażona ryba z frytkami, często podawana z puree z groszku.",
+    "tags": "british,fish,street food,medium",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Kimchi",
+    "cuisine": "Korean",
+    "price": 1,
+    "description": "Fermentowane warzywa, najczęściej kapusta pekińska, z pikantnymi przyprawami.",
+    "tags": "korean,vegetarian,spicy,cheap",
+    "type": "side",
+    "time": "snack"
+  },
+  {
+    "name": "Ratatouille",
+    "cuisine": "French",
+    "price": 3,
+    "description": "Provençal stew of eggplant, zucchini, bell peppers, tomatoes, and herbs.",
+    "tags": "french,vegetarian,stew,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Jollof Rice",
+    "cuisine": "Nigerian",
+    "price": 3,
+    "description": "Spicy tomato rice dish with vegetables and meat.",
+    "tags": "nigerian,rice,spicy,medium",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Goulash",
+    "cuisine": "Hungarian",
+    "price": 3,
+    "description": "Hearty stew of meat and vegetables seasoned with paprika.",
+    "tags": "hungarian,stew,meat,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Laksa",
+    "cuisine": "Malaysian",
+    "price": 3,
+    "description": "Spicy noodle soup with coconut milk and prawns.",
+    "tags": "malaysian,soup,spicy,medium",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Empanadas",
+    "cuisine": "Argentinian",
+    "price": 2,
+    "description": "Pastries filled with meat, cheese, or sweet fillings.",
+    "tags": "argentinian,street food,baked,cheap",
+    "type": "side",
+    "time": "snack"
+  },
+  {
+    "name": "Bibingka",
+    "cuisine": "Filipino",
+    "price": 2,
+    "description": "Rice cake made with coconut milk and topped with cheese and salted egg.",
+    "tags": "filipino,dessert,cake,cheap",
+    "type": "dessert",
+    "time": "snack"
+  },
+  {
+    "name": "Dim Sum",
+    "cuisine": "Chinese",
+    "price": 4,
+    "description": "Variety of bite-sized portions of food served in small steamer baskets.",
+    "tags": "chinese,dim sum,steamed,medium",
+    "type": "side",
+    "time": "lunch"
+  },
+  {
+    "name": "Pierogi",
+    "cuisine": "Polish",
+    "price": 2,
+    "description": "Dumplings filled with potato, cheese, meat, or fruit.",
+    "tags": "polish,dumplings,boiled,cheap",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Tom Yum",
+    "cuisine": "Thai",
+    "price": 3,
+    "description": "Hot and sour Thai soup with shrimp, mushrooms, and fragrant spices.",
+    "tags": "thai,soup,spicy,medium",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Gazpacho",
+    "cuisine": "Spanish",
+    "price": 2,
+    "description": "Cold tomato soup with cucumbers, peppers, and onions.",
+    "tags": "spanish,soup,vegetarian,cold,cheap",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Baklava",
+    "cuisine": "Turkish",
+    "price": 2,
+    "description": "Sweet pastry made of layers of filo filled with chopped nuts and honey.",
+    "tags": "turkish,dessert,pastry,cheap",
+    "type": "dessert",
+    "time": "snack"
+  },
+  {
+    "name": "Kebab",
+    "cuisine": "Turkish",
+    "price": 3,
+    "description": "Skewered and grilled meat served with flatbread and vegetables.",
+    "tags": "turkish,grilled,meat,medium",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Bratwurst",
+    "cuisine": "German",
+    "price": 2,
+    "description": "Grilled sausage typically served with mustard and bread.",
+    "tags": "german,sausage,grilled,cheap",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Ceviche",
+    "cuisine": "Peruvian",
+    "price": 3,
+    "description": "Fresh fish marinated in lime juice with onions, cilantro, and chili peppers.",
+    "tags": "peruvian,seafood,spicy,cold,medium",
+    "type": "main",
+    "time": "lunch"
+  },
+  {
+    "name": "Samosa",
+    "cuisine": "Indian",
+    "price": 1,
+    "description": "Fried or baked pastry with a savory filling, such as spiced potatoes, peas, and lentils.",
+    "tags": "indian,vegetarian,spicy,cheap",
+    "type": "side",
+    "time": "snack"
+  },
+  {
+    "name": "Couscous",
+    "cuisine": "Moroccan",
+    "price": 2,
+    "description": "Steamed semolina grains served with vegetables and meat.",
+    "tags": "moroccan,grain,vegetarian,cheap",
+    "type": "main",
+    "time": "dinner"
+  },
+  {
+    "name": "Miso Soup",
+    "cuisine": "Japanese",
+    "price": 2,
+    "description": "Traditional Japanese soup made with dashi stock, miso paste, tofu, and seaweed.",
+    "tags": "japanese,soup,vegetarian,cheap",
+    "type": "soup",
+    "time": "lunch"
+  },
+  {
+    "name": "Churros",
+    "cuisine": "Spanish",
+    "price": 2,
+    "description": "Fried dough pastry sprinkled with sugar, often served with chocolate dipping sauce.",
+    "tags": "spanish,dessert,street food,cheap",
+    "type": "dessert",
+    "time": "snack"
+  },
+  {
+    "name": "Gyoza",
+    "cuisine": "Japanese",
+    "price": 2,
+    "description": "Pan-fried dumplings filled with ground meat and vegetables.",
+    "tags": "japanese,dumplings,pan-fried,cheap",
+    "type": "side",
+    "time": "snack"
+  }
+]
