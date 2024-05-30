@@ -5,29 +5,32 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "./mode-toggle";
 import { Beef, Menu } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input";
-
+import { Link } from "react-router-dom";
+import { menuData } from "@/data/data";
 export const NavigationMenuDemo = () => (
   <header className="sticky w-full top-0 py-3 backdrop-blur-sm border-b">
     <div className="container max-w-screen-2xl">
       <div className="hidden md:flex ">
-        <div className="flex items-center text-xl font-semibold uppercase tracking-wider">
-          Fare <Beef /> <span className="text-red-800 font-bold">Well</span>
-        </div>
+        <Link className="flex items-center" to="/">
+          <div className="flex items-center text-xl font-semibold uppercase tracking-wider">
+            Fare <Beef /> <span className="text-red-800 font-bold">Well</span>
+          </div>
+        </Link>
         <nav className="flex items-center ml-4">
           <NavigationMenu>
             <NavigationMenuList>
-              <NavigationMenuItem>Item One</NavigationMenuItem>
-              <NavigationMenuItem>Item One</NavigationMenuItem>
-              <NavigationMenuItem>Item One</NavigationMenuItem>
+              {menuData.map((linkItem) => (
+                <NavigationMenuItem>
+                  <Link
+                    className="relative text-xl uppercase font-semibold hover:text-gray-400 transition-colors"
+                    to={linkItem.link}
+                  >
+                    {linkItem.name}
+                  </Link>
+                </NavigationMenuItem>
+              ))}
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
@@ -49,13 +52,16 @@ export const NavigationMenuDemo = () => (
                 <Menu />
               </SheetTrigger>
               <SheetContent>
-                <SheetHeader>
-                  <SheetTitle>Are you absolutely sure?</SheetTitle>
-                  <SheetDescription>
-                    This action cannot be undone. This will permanently delete
-                    your account and remove your data from our servers.
-                  </SheetDescription>
-                </SheetHeader>
+                <nav className="flex flex-col items-start ml-4">
+                  {menuData.map((linkItem) => (
+                    <Link
+                      className="text-xl uppercase font-semibold"
+                      to={linkItem.link}
+                    >
+                      {linkItem.name}
+                    </Link>
+                  ))}
+                </nav>
               </SheetContent>
             </Sheet>
           </div>
