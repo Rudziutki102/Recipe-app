@@ -1,6 +1,6 @@
-import { ContainerProps } from "@/types/common-types";
+import { withChildrenAndClassProps } from "@/types/common-types";
 
-const Container = ({ children, className }: ContainerProps) => {
+const Container = ({ children, className }: withChildrenAndClassProps) => {
   return (
     <div className={`container max-w-screen-2xl ${className && className}`}>
       {children}
