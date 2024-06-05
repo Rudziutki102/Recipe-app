@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import FoodExample from "../assets/food_example.jpg";
+import { Link } from "react-router-dom";
 const ProductsList = ({
   titleName,
   data,
@@ -21,20 +22,22 @@ const ProductsList = ({
       <div className="flex flex-col md:grid md:grid-cols-12 md:gap-5">
         {data.map((item, index) => (
           <div className="md:col-span-3" key={index}>
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  <img src={FoodExample} alt="elo" />
-                </CardTitle>
-                <CardDescription>{item.name}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>{item.description}</p>
-              </CardContent>
-              <CardFooter>
-                <p>{item.tags}</p>
-              </CardFooter>
-            </Card>
+            <Link to={`/recipe/${item._id}`}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>
+                    <img src={FoodExample} alt="elo" />
+                  </CardTitle>
+                  <CardDescription>{item.name}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p>{item.description}</p>
+                </CardContent>
+                <CardFooter>
+                  <p>{item.tags}</p>
+                </CardFooter>
+              </Card>
+            </Link>
           </div>
         ))}
       </div>

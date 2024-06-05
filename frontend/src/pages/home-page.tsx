@@ -22,7 +22,7 @@ const mockup = [
 ];
 
 const HomePage = () => {
-  const { data, error, isLoading } = useSWR("http://localhost:8000", fetcher);
+  const { data, error, isLoading } = useSWR("/api/recipes", fetcher);
   console.log(data, error, isLoading);
   return (
     <Container>

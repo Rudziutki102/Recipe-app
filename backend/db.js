@@ -1,4 +1,4 @@
-import { MongoClient, ServerApiVersion } from "mongodb";
+import { MongoClient, ServerApiVersion, ObjectId } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -20,6 +20,18 @@ export async function connectToDatabase() {
   } catch (error) {
     console.error("Failed to connect to MongoDB", error);
     throw error;
+  }
+}
+export async function getRecipeById(id) {
+  try {
+    const database = client.db("recipe-app");
+    const collection = database.collection("recipes");
+    const recipe = await collection.findOne({
+      _id: ObjectId.createFromHexString(id),
+    });
+    return recipe;
+  } catch (error) {
+    throw new Error(error);
   }
 }
 

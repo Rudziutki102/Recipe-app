@@ -6,7 +6,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="h-[150vh]">
+      <div className="relative">
         <NavigationMenuDemo />
         <Outlet />
         <ModeToggle className="md:hidden fixed bottom-[5%] right-[5%]" />

@@ -1,34 +1,20 @@
-import http from "http";
-import { getRecipes, connectToDatabase } from "./db.js";
+import { connectToDatabase } from "./db.js";
+import express from "express";
+import router from "./routes/recipes.js";
+import { errorHandler } from "./helpers/errorHandler.js";
 
 const PORT = process.env.PORT || 3000;
 
-const server = http.createServer(async (req, res) => {
-  try {
-    if (req.method === "GET" && req.url === "/") {
-      const recipes = await getRecipes();
-
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Access-Control-Allow-Methods", "GET");
-      res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-      res.writeHead(200, { "Content-Type": "application/json" });
-      res.write(JSON.stringify(recipes));
-      res.end();
-    } else {
-      res.writeHead(404, { "Content-Type": "text/plain" });
-      res.end("Not found");
-    }
-  } catch (error) {
-    res.writeHead(500, { "Content-Type": "text/plain" });
-    res.end("Server Error");
-  }
-});
-
+const app = express();
+// routes
+app.use("/api", router);
+// error handlers
+app.use(errorHandler);
 async function startServer() {
   try {
     await connectToDatabase();
-    server.listen(PORT, () => {
-      console.log(`Server is listening on port ${PORT}`);
+    app.listen(PORT, () => {
+      console.log("running");
     });
   } catch (error) {
     console.error("Failed to start server", error);

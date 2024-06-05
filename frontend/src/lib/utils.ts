@@ -5,5 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const fetcher = (...args: Parameters<typeof fetch>) =>
-  fetch(...args).then((res) => res.json());
+export const fetcher = (...args: Parameters<typeof fetch>) => {
+  console.log(args);
+  return fetch(...args).then((res) => res.json());
+};
