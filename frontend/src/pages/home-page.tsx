@@ -22,8 +22,11 @@ const mockup = [
 ];
 
 const HomePage = () => {
-  const { data, error, isLoading } = useSWR("/api/recipes", fetcher);
-  console.log(data, error, isLoading);
+  const { data, isLoading } = useSWR("/api/recipes", fetcher, {
+    revalidateIfStale: false,
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+  });
   return (
     <Container>
       <BlogList titleName="Blog list" data={mockup} />
