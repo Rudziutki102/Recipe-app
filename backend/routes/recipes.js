@@ -15,10 +15,7 @@ router.get("/recipes", async (req, res, next) => {
 router.get("/recipe/:id", async (req, res) => {
   const { id } = req.params;
   const recipe = await getRecipeById(id);
-  res.send({
-    id,
-    recipe,
-  });
+  res.json(recipe);
 });
 //update specific recipe
 router.post("/recipe", (req, res) => {

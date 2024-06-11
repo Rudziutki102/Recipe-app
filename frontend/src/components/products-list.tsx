@@ -2,39 +2,42 @@ import Separator from "./common/separator";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import FoodExample from "../assets/food_example.jpg";
+import { ProductProps } from "@/types/products-types";
 import { Link } from "react-router-dom";
+import BlankProduct from "@/assets/blank_product.webp";
+
 const ProductsList = ({
   titleName,
   data,
 }: {
   titleName: string;
-  data: Record<string, string | number>[];
+  data: ProductProps[];
 }) => {
   return (
     <>
       <Separator>{titleName}</Separator>
       <div className="flex flex-col md:grid md:grid-cols-12 md:gap-5">
-        {data.map((item, index) => (
+        {data.map(({ _id, name, image_url, description, tags }, index) => (
           <div className="md:col-span-3" key={index}>
-            <Link to={`/recipe/${item._id}`}>
+            <Link to={`/recipe/${_id}`}>
               <Card>
                 <CardHeader>
                   <CardTitle>
-                    <img src={FoodExample} alt="elo" />
+                    <img src={image_url ?? BlankProduct} alt={name} />
                   </CardTitle>
-                  <CardDescription>{item.name}</CardDescription>
+                  <CardTitle>
+                    <span className="text-normal">{name}</span>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>{item.description}</p>
+                  <p>{description}</p>
                 </CardContent>
                 <CardFooter>
-                  <p>{item.tags}</p>
+                  <p>{tags}</p>
                 </CardFooter>
               </Card>
             </Link>
